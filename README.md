@@ -56,9 +56,20 @@
 
 ## 起動方法
 
-```bash
+`README.md` があるフォルダでターミナルを開いてください。ホームフォルダ（`C:\Users\名前`）で打つと、ファイルが見つからずエラーになります。
+
+エクスプローラーでこのフォルダを開き、アドレスバーに `powershell` と入力して Enter すると、正しい場所で開けます。
+
+Windows の PowerShell で `.venv\Scripts\activate` がセキュリティエラーになるときは、先に1回だけ次を実行します。
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+そのあと：
+
+```powershell
 python -m venv .venv
-# Windows
 .venv\Scripts\activate
 pip install -r requirements.txt
 python generate_sample.py
