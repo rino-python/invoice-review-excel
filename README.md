@@ -76,6 +76,8 @@ python generate_sample.py
 streamlit run app.py
 ```
 
+ターミナルに `Email:` と出たら、何も入力せず Enter を押してください。初回だけ聞かれます。聞かれたままブラウザを開くと、つながりません。
+
 ブラウザで `http://localhost:8501` が開きます。
 
 生成AIを試すときだけ、環境変数 `OPENAI_API_KEY` を置くか、画面の欄に貼ってください。鍵があるとき、抜けた項目の原文を OpenAI へ送ります。`.env` は git に入れません。
